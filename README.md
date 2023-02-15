@@ -1,9 +1,9 @@
-<h3 align="center">NFT SWAPPER (BETA)</h3> 
-<p align="center">Peer to peer exchange of multiple NFTs on EVM chains</p>
+<h3 align="center">NFT TRADER (BETA)</h3> 
+<p align="center">P2P exchange of multiple NFTs on EVM blockchains</p>
  
 
 
-Instead of listing your NFTs and waiting for an offer, this exchanger registers an agreement to swap specific tokens for other specific tokens. The registry creator chooses who and what to exchange, and the swap takes place when the second party accepts the deal. It is generic or extensible to other types of tokens, both fungible and non-fungible.
+Instead of listing your NFTs and waiting for an offer, this trader registers an agreement to swap specific tokens for other specific tokens. The registry creator chooses who and what to exchange, and the swap takes place when the second party accepts the deal. It is generic or extensible to other types of tokens, both fungible and non-fungible.
 
 The main contract is the [NFTSwapper](./contracts/NFTSwapper.sol), where swaps are stored and handled. For each type of token, there is a specific contract that follows the [ISwapperHandler](./contracts/ISwapperHandler.sol) interface. These are responsible for the transfer, so these are the addresses to be approved as operators by the NFT owners.
 
